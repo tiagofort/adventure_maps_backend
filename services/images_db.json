@@ -1,0 +1,302 @@
+[
+  {
+    "map_number": "401",
+    "local": "Pewter",
+    "coords": "3670, 3538, 7",
+    "path": "assets/map401.png"
+  },
+  {
+    "map_number": "402",
+    "local": "Pewter",
+    "coords": "3732, 3546, 6",
+    "path": "assets/map402.png"
+  },
+  {
+    "map_number": "403",
+    "local": "Mt. Moon",
+    "coords": "3851, 3490, 2",
+    "path": "assets/map403.png"
+  },
+  {
+    "map_number": "404",
+    "local": "Mt. Moon",
+    "coords": "3867, 3508, 7",
+    "path": "assets/map404.png"
+  },
+  {
+    "map_number": "405",
+    "local": "Rock Tunnel",
+    "coords": "4224, 3572, 6",
+    "path": "assets/map405.png"
+  },
+  {
+    "map_number": "406",
+    "local": "Power Plant (Caminho da Outland South)",
+    "coords": "4463, 3524, 8",
+    "path": "assets/map406.png"
+  },
+  {
+    "map_number": "407",
+    "local": "Saffron",
+    "coords": "4138, 3595, 7",
+    "path": "assets/map407.png"
+  },
+  {
+    "map_number": "408",
+    "local": "Machop de Lavender",
+    "coords": "4214, 3730, 7",
+    "path": "assets/map408.png"
+  },
+  {
+    "map_number": "409",
+    "local": "Rock Tunnel",
+    "coords": "4261, 3477, 5",
+    "path": "assets/map409.png"
+  },
+  {
+    "map_number": "410",
+    "local": "Tangelo Island (Golem)",
+    "coords": "3013, 5938, 10",
+    "path": "assets/map410.png"
+  },
+  {
+    "map_number": "411",
+    "local": "Tangelo Island (Golduck)",
+    "coords": "3188, 5912, 7",
+    "path": "assets/map411.png"
+  },
+  {
+    "map_number": "412",
+    "local": "Trovitopolis City (Snorlax)",
+    "coords": "3665, 6013, 7",
+    "path": "assets/map412.png"
+  },
+  {
+    "map_number": "413",
+    "local": "Cinnabar",
+    "coords": "3704, 3981, 5",
+    "path": "assets/map413.png"
+  },
+  {
+    "map_number": "414",
+    "local": "Cinnabar",
+    "coords": "3747, 3963, 7",
+    "path": "assets/map414.png"
+  },
+  {
+    "map_number": "415",
+    "local": "Fairchild Island",
+    "coords": "3786, 5748, 4",
+    "path": "assets/map415.png"
+  },
+  {
+    "map_number": "416",
+    "local": "Fairchild Island (Steelix)",
+    "coords": "3834, 5756, 8",
+    "path": "assets/map416.png"
+  },
+  {
+    "map_number": "417",
+    "local": "Fairchild Island (Giant Rhydon)",
+    "coords": "3908, 5792, 1",
+    "path": "assets/map417.png"
+  },
+  {
+    "map_number": "418",
+    "local": "Fire Island",
+    "coords": "3994, 5361, 7",
+    "path": "assets/map418.png"
+  },
+  {
+    "map_number": "419",
+    "local": "Seafoam Island",
+    "coords": "4094, 4251, 6",
+    "path": "assets/map419.png"
+  },
+  {
+    "map_number": "420",
+    "local": "Ascorbia Island",
+    "coords": "4428, 4349, 7",
+    "path": "assets/map420.png"
+  },
+  {
+    "map_number": "421",
+    "local": "Desert Island",
+    "coords": "4596, 3656, 8",
+    "path": "assets/map421.png"
+  },
+  {
+    "map_number": "101",
+    "local": "Green Island",
+    "coords": "3780, 3326, 7",
+    "path": "assets/map101.png"
+  },
+  {
+    "map_number": "102",
+    "local": "Wildwind Island",
+    "coords": "3969, 3300, 7",
+    "path": "assets/map102.png"
+  },
+  {
+    "map_number": "103",
+    "local": "Wildwind Island",
+    "coords": "4002, 3320, 7",
+    "path": "assets/map103.png"
+  },
+  {
+    "map_number": "104",
+    "local": "Saffron",
+    "coords": "4009, 3601, 7",
+    "path": "assets/map104.png"
+  },
+  {
+    "map_number": "105",
+    "local": "Hurricane Island",
+    "coords": "4166, 3302, 7",
+    "path": "assets/map105.png"
+  },
+  {
+    "map_number": "106",
+    "local": "Shell Island",
+    "coords": "4266, 3359, 7",
+    "path": "assets/map106.png"
+  },
+  {
+    "map_number": "107",
+    "local": "Shell Island",
+    "coords": "4299, 3333, 6",
+    "path": "assets/map107.png"
+  },
+  {
+    "map_number": "108",
+    "local": "Shell Island",
+    "coords": "4342, 3311, 6",
+    "path": "assets/map108.png"
+  },
+  {
+    "map_number": "109",
+    "local": "Tropical Island",
+    "coords": "4360, 3927, 7",
+    "path": "assets/map109.png"
+  },
+  {
+    "map_number": "110",
+    "local": "Tropical Island",
+    "coords": "4393, 3893, 7",
+    "path": "assets/map110.png"
+  },
+  {
+    "map_number": "111",
+    "local": "Tropical Island",
+    "coords": "4404, 3819, 4",
+    "path": "assets/map111.png"
+  },
+  {
+    "map_number": "112",
+    "local": "Power Plant",
+    "coords": "4434, 3503, 7",
+    "path": "assets/map112.png"
+  },
+  {
+    "map_number": "113",
+    "local": "Tropical Island",
+    "coords": "4442, 3894, 7",
+    "path": "assets/map113.png"
+  },
+  {
+    "map_number": "114",
+    "local": "Dark Light Island",
+    "coords": "4699, 3495, 7",
+    "path": "assets/map114.png"
+  },
+  {
+    "map_number": "115",
+    "local": "Pinkan Island",
+    "coords": "3263, 4999, 7",
+    "path": "assets/map115.png"
+  },
+  {
+    "map_number": "116",
+    "local": "Tarroco Island",
+    "coords": "3345, 4605, 7",
+    "path": "assets/map116.png"
+  },
+  {
+    "map_number": "117",
+    "local": "Valencia Island",
+    "coords": "3412, 6174, 7",
+    "path": "assets/map117.png"
+  },
+  {
+    "map_number": "118",
+    "local": "Kabuto Fossil Island",
+    "coords": "3423, 5725, 7",
+    "path": "assets/map118.png"
+  },
+  {
+    "map_number": "119",
+    "local": "Old Village (Aipom)",
+    "coords": "3888, 6295, 7",
+    "path": "assets/map119.png"
+  },
+  {
+    "map_number": "120",
+    "local": "Seafoam Island (Castform)",
+    "coords": "3999, 4120, 6",
+    "path": "assets/map120.png"
+  },
+  {
+    "map_number": "121",
+    "local": "Cleopatra Island",
+    "coords": "4006, 4826, 7",
+    "path": "assets/map121.png"
+  },
+  {
+    "map_number": "122",
+    "local": "Sphinx Island",
+    "coords": "4075, 5479, 7",
+    "path": "assets/map122.png"
+  },
+  {
+    "map_number": "123",
+    "local": "Kinnow Island",
+    "coords": "4094, 5948, 7",
+    "path": "assets/map123.png"
+  },
+  {
+    "map_number": "124",
+    "local": "Dark Moon Island",
+    "coords": "4155, 4702, 5",
+    "path": "assets/map124.png"
+  },
+  {
+    "map_number": "125",
+    "local": "Kinnow Island",
+    "coords": "4175, 5773, 7",
+    "path": "assets/map125.png"
+  },
+  {
+    "map_number": "126",
+    "local": "Golden Island",
+    "coords": "4182, 6245, 6",
+    "path": "assets/map126.png"
+  },
+  {
+    "map_number": "127",
+    "local": "Kinnow Island",
+    "coords": "4197, 5774, 7",
+    "path": "assets/map127.png"
+  },
+  {
+    "map_number": "128",
+    "local": "Kinnow Island",
+    "coords": "4255, 5725, 7",
+    "path": "assets/map128.png"
+  },
+  {
+    "map_number": "327",
+    "local": "Tarroco Island",
+    "coords": "3361, 4656, 6",
+    "path": "assets/map327.png"
+  }
+]
