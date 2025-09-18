@@ -298,5 +298,461 @@
     "local": "Tarroco Island",
     "coords": "3361, 4656, 6",
     "path": "assets/map327.png"
+  },
+  {
+    "map_number": "632",
+    "local": "Vermilion",
+    "coords": "4114, 3758, 8",
+    "path": "assets/map632.png"
+  },
+  {
+    "map_number": "601",
+    "local": "Charicific Valley",
+    "coords": "3522, 3264, 5",
+    "path": "assets/map601.png"
+  },
+  {
+    "map_number": "602",
+    "local": "Charicific Valley",
+    "coords": "3561, 3256, 4",
+    "path": "assets/map602.png"
+  },
+  {
+    "map_number": "603",
+    "local": "Pewter",
+    "coords": "3666, 3415, 7",
+    "path": "assets/map603.png"
+  },
+  {
+    "map_number": "604",
+    "local": "Hurricane Island",
+    "coords": "4135, 3305, 5",
+    "path": "assets/map604.png"
+  },
+  {
+    "map_number": "605",
+    "local": "Hurricane Island",
+    "coords": "4150, 3283, 4",
+    "path": "assets/map605.png"
+  },
+  {
+    "map_number": "606",
+    "local": "Cubone's Lair",
+    "coords": "4186, 3439, 7",
+    "path": "assets/map606.png"
+  },
+  {
+    "map_number": "607",
+    "local": "Cerulean",
+    "coords": "4191, 3516, 7",
+    "path": "assets/map607.png"
+  },
+  {
+    "map_number": "608",
+    "local": "Lightstorm Island",
+    "coords": "4624, 3263, 6",
+    "path": "assets/map608.png"
+  },
+  {
+    "map_number": "609",
+    "local": "Viridian Forest (subsolo)",
+    "coords": "3734, 3639, 8",
+    "path": "assets/map609.png"
+  },
+  {
+    "map_number": "610",
+    "local": "Cubone de Saffron",
+    "coords": "4114, 3592, 7",
+    "path": "assets/map610.png"
+  },
+  {
+    "map_number": "611",
+    "local": "Saffron e Lavender (subsolo)",
+    "coords": "4191, 3613, 9",
+    "path": "assets/map611.png"
+  },
+  {
+    "map_number": "612",
+    "local": "Tangelo Island",
+    "coords": "3165, 5962, 5",
+    "path": "assets/map612.png"
+  },
+  {
+    "map_number": "613",
+    "local": "Lakeshore Island",
+    "coords": "3364, 4853, 7",
+    "path": "assets/map613.png"
+  },
+  {
+    "map_number": "614",
+    "local": "Fairchild Island (Giant Pidgeot)",
+    "coords": "3627, 5786, 1",
+    "path": "assets/map614.png"
+  },
+  {
+    "map_number": "615",
+    "local": "Magma Island",
+    "coords": "3631, 4754, 8",
+    "path": "assets/map615.png"
+  },
+  {
+    "map_number": "616",
+    "local": "Fairchild Island (Stantler)",
+    "coords": "3652, 5684, 4",
+    "path": "assets/map616.png"
+  },
+  {
+    "map_number": "617",
+    "local": "Magma Island",
+    "coords": "3683, 4743, 6",
+    "path": "assets/map617.png"
+  },
+  {
+    "map_number": "618",
+    "local": "Magma Island",
+    "coords": "3698, 4753, 7",
+    "path": "assets/map618.png"
+  },
+  {
+    "map_number": "619",
+    "local": "Pewter (subsolo)",
+    "coords": "3720, 3527, 8",
+    "path": "assets/map619.png"
+  },
+  {
+    "map_number": "620",
+    "local": "Cinnabar",
+    "coords": "3740, 3992, 8",
+    "path": "assets/map620.png"
+  },
+  {
+    "map_number": "621",
+    "local": "Fairchild Island",
+    "coords": "3748, 5779, 1",
+    "path": "assets/map621.png"
+  },
+  {
+    "map_number": "622",
+    "local": "Fairchild Island",
+    "coords": "3811, 5744, 6",
+    "path": "assets/map622.png"
+  },
+  {
+    "map_number": "623",
+    "local": "Jungle Island",
+    "coords": "3843, 3794, 7",
+    "path": "assets/map623.png"
+  },
+  {
+    "map_number": "624",
+    "local": "Mt. Moon (Sandslash)",
+    "coords": "3859, 3411, 9",
+    "path": "assets/map624.png"
+  },
+  {
+    "map_number": "625",
+    "local": "Mt. Moon",
+    "coords": "3859, 3500, 8",
+    "path": "assets/map625.png"
+  },
+  {
+    "map_number": "626",
+    "local": "Mt. Moon",
+    "coords": "3877, 3445, 8",
+    "path": "assets/map626.png"
+  },
+  {
+    "map_number": "627",
+    "local": "Cleopatra Island",
+    "coords": "4009, 4841, 7",
+    "path": "assets/map627.png"
+  },
+  {
+    "map_number": "628",
+    "local": "Cleopatra Island",
+    "coords": "4043, 4851, 3",
+    "path": "assets/map628.png"
+  },
+  {
+    "map_number": "629",
+    "local": "Cleopatra Island",
+    "coords": "4050, 4848, 4",
+    "path": "assets/map629.png"
+  },
+  {
+    "map_number": "630",
+    "local": "Cleopatra Island",
+    "coords": "4079, 4818, 7",
+    "path": "assets/map630.png"
+  },
+  {
+    "map_number": "631",
+    "local": "Saffron",
+    "coords": "4084, 3626, 9",
+    "path": "assets/map631.png"
+  },
+  {
+    "map_number": "632",
+    "local": "Vermilion",
+    "coords": "4114, 3758, 8",
+    "path": "assets/map632.png"
+  },
+  {
+    "map_number": "633",
+    "local": "Saffron",
+    "coords": "4150, 3637, 8",
+    "path": "assets/map633.png"
+  },
+  {
+    "map_number": "634",
+    "local": "Cubone's Lair",
+    "coords": "4171, 3428, 8",
+    "path": "assets/map634.png"
+  },
+  {
+    "map_number": "635",
+    "local": "Vermilion",
+    "coords": "4190, 3783, 9",
+    "path": "assets/map635.png"
+  },
+  {
+    "map_number": "636",
+    "local": "Fuchsia",
+    "coords": "4246, 3960, 8",
+    "path": "assets/map636.png"
+  },
+  {
+    "map_number": "637",
+    "local": "Moro Island",
+    "coords": "4447, 5598, 5",
+    "path": "assets/map637.png"
+  },
+  {
+    "map_number": "638",
+    "local": "Ascorbia Island",
+    "coords": "4551, 4492, 9",
+    "path": "assets/map638.png"
+  },
+  {
+    "map_number": "638",
+    "local": "Lost Island",
+    "coords": "4580, 4061, 8",
+    "path": "assets/map638.png"
+  },
+  {
+    "map_number": "401",
+    "local": "Pewter",
+    "coords": "3670, 3538, 7",
+    "path": "assets/map401.png"
+  },
+  {
+    "map_number": "402",
+    "local": "Pewter",
+    "coords": "3732, 3546, 6",
+    "path": "assets/map402.png"
+  },
+  {
+    "map_number": "403",
+    "local": "Mt. Moon",
+    "coords": "3851, 3490, 2",
+    "path": "assets/map403.png"
+  },
+  {
+    "map_number": "404",
+    "local": "Mt. Moon",
+    "coords": "3867, 3508, 7",
+    "path": "assets/map404.png"
+  },
+  {
+    "map_number": "405",
+    "local": "Rock Tunnel",
+    "coords": "4224, 3572, 6",
+    "path": "assets/map405.png"
+  },
+  {
+    "map_number": "406",
+    "local": "Power Plant (Caminho da Outland South)",
+    "coords": "4463, 3524, 8",
+    "path": "assets/map406.png"
+  },
+  {
+    "map_number": "407",
+    "local": "Saffron",
+    "coords": "4138, 3595, 7",
+    "path": "assets/map407.png"
+  },
+  {
+    "map_number": "408",
+    "local": "Machop de Lavender",
+    "coords": "4214, 3730, 7",
+    "path": "assets/map408.png"
+  },
+  {
+    "map_number": "409",
+    "local": "Rock Tunnel",
+    "coords": "4261, 3477, 5",
+    "path": "assets/map409.png"
+  },
+  {
+    "map_number": "410",
+    "local": "Tangelo Island (Golem)",
+    "coords": "3013, 5938, 10",
+    "path": "assets/map410.png"
+  },
+  {
+    "map_number": "411",
+    "local": "Tangelo Island (Golduck)",
+    "coords": "3188, 5912, 7",
+    "path": "assets/map411.png"
+  },
+  {
+    "map_number": "412",
+    "local": "Trovitopolis City (Snorlax)",
+    "coords": "3665, 6013, 7",
+    "path": "assets/map412.png"
+  },
+  {
+    "map_number": "413",
+    "local": "Cinnabar",
+    "coords": "3704, 3981, 5",
+    "path": "assets/map413.png"
+  },
+  {
+    "map_number": "414",
+    "local": "Cinnabar",
+    "coords": "3747, 3963, 7",
+    "path": "assets/map414.png"
+  },
+  {
+    "map_number": "415",
+    "local": "Fairchild Island",
+    "coords": "3786, 5748, 4",
+    "path": "assets/map415.png"
+  },
+  {
+    "map_number": "416",
+    "local": "Fairchild Island (Steelix)",
+    "coords": "3834, 5756, 8",
+    "path": "assets/map416.png"
+  },
+  {
+    "map_number": "417",
+    "local": "Fairchild Island (Giant Rhydon)",
+    "coords": "3908, 5792, 1",
+    "path": "assets/map417.png"
+  },
+  {
+    "map_number": "418",
+    "local": "Fire Island",
+    "coords": "3994, 5361, 7",
+    "path": "assets/map418.png"
+  },
+  {
+    "map_number": "419",
+    "local": "Seafoam Island",
+    "coords": "4094, 4251, 6",
+    "path": "assets/map419.png"
+  },
+  {
+    "map_number": "420",
+    "local": "Ascorbia Island",
+    "coords": "4428, 4349, 7",
+    "path": "assets/map420.png"
+  },
+  {
+    "map_number": "421",
+    "local": "Desert Island",
+    "coords": "4596, 3656, 8",
+    "path": "assets/map421.png"
+  },
+  {
+    "map_number": "501",
+    "local": "Pewter",
+    "coords": "3469, 3454, 8",
+    "path": "assets/map501.png"
+  },
+  {
+    "map_number": "502",
+    "local": "Pewter",
+    "coords": "3595, 3562, 8",
+    "path": "assets/map502.png"
+  },
+  {
+    "map_number": "503",
+    "local": "Shell Island",
+    "coords": "4278, 3327, 7",
+    "path": "assets/map503.png"
+  },
+  {
+    "map_number": "504",
+    "local": "Shell Island",
+    "coords": "4352, 3351, 7",
+    "path": "assets/map504.png"
+  },
+  {
+    "map_number": "505",
+    "local": "Pewter (Omastar)",
+    "coords": "3507, 3579, 8",
+    "path": "assets/map505.png"
+  },
+  {
+    "map_number": "506",
+    "local": "Cerulean",
+    "coords": "4078, 3557, 9",
+    "path": "assets/map506.png"
+  },
+  {
+    "map_number": "507",
+    "local": "Cerulean",
+    "coords": "4105, 3593, 9",
+    "path": "assets/map507.png"
+  },
+  {
+    "map_number": "201",
+    "local": "Ice Island",
+    "coords": "3740, 5420, 3",
+    "path": "assets/map201.png"
+  },
+  {
+    "map_number": "202",
+    "local": "Ice Island",
+    "coords": "3757, 5418, 2",
+    "path": "assets/map202.png"
+  },
+  {
+    "map_number": "203",
+    "local": "Seafoam Island (esquerda)",
+    "coords": "3871, 4269, 7",
+    "path": "assets/map203.png"
+  },
+  {
+    "map_number": "204",
+    "local": "Seafoam Island",
+    "coords": "3940, 4040, 8",
+    "path": "assets/map204.png"
+  },
+  {
+    "map_number": "205",
+    "local": "Seafoam Island",
+    "coords": "3986, 4020, 7",
+    "path": "assets/map205.png"
+  },
+  {
+    "map_number": "206",
+    "local": "Seafoam Island",
+    "coords": "4010, 4103, 5",
+    "path": "assets/map206.png"
+  },
+  {
+    "map_number": "207",
+    "local": "Camping Site",
+    "coords": "4016, 4225, 7",
+    "path": "assets/map207.png"
+  },
+  {
+    "map_number": "208",
+    "local": "Seafoam Island",
+    "coords": "4181, 4171, 5",
+    "path": "assets/map208.png"
   }
 ]

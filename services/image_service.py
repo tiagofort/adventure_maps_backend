@@ -1,4 +1,5 @@
 from pathlib import Path
+import base64
 import json
 import cv2
 import numpy as np
@@ -39,10 +40,10 @@ def crop_and_resize_to_target(img, target_inner_size=(322, 178), border_ratio=0.
     return canvas, inner
 
 
-def auto_crop(img, debug_name=None):
+def auto_crop(img, save_debug, debug_name=None):
     """
     Detecta o maior contorno e recorta a área útil.
-    Se debug_name != None, salva a imagem com contornos desenhados.
+    Só salva debug se save_debug=True.
     """
     gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
     blurred = cv2.GaussianBlur(gray, (5, 5), 0)
@@ -52,18 +53,17 @@ def auto_crop(img, debug_name=None):
     if not contours:
         return None
 
-    # pega o maior contorno
     c = max(contours, key=cv2.contourArea)
     x, y, w, h = cv2.boundingRect(c)
 
-    # descarta crops absurdos
     H, W = img.shape[:2]
-    if w < W * 0.2 or h < H * 0.2:  # muito pequeno
+    if w < W * 0.2 or h < H * 0.2:
         return None
-    if w > W * 0.95 and h > H * 0.95:  # praticamente a imagem inteira
+    if w > W * 0.95 and h > H * 0.95:
         return None
-
-    if debug_name:
+    
+    if save_debug and debug_name:
+        DEBUG_DIR.mkdir(exist_ok=True)  # só cria pasta se for salvar
         debug_img = img.copy()
         cv2.drawContours(debug_img, [c], -1, (0, 255, 0), 2)
         cv2.rectangle(debug_img, (x, y), (x+w, y+h), (0, 0, 255), 2)
@@ -79,20 +79,26 @@ def normalize_contrast(img):
     Converte para escala de cinza e aplica equalização adaptativa (CLAHE).
     Retorna imagem BGR equalizada para manter compatibilidade.
     """
-    gray = cv2.cvtColor(img, cv2.COLOR_BGR2GRAY)
+    lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
+    l, a, b = cv2.split(lab)
+
     clahe = cv2.createCLAHE(clipLimit=2.0, tileGridSize=(8, 8))
-    eq = clahe.apply(gray)
-    return cv2.cvtColor(eq, cv2.COLOR_GRAY2BGR)
+    l_eq = clahe.apply(l)
+
+    lab_eq = cv2.merge((l_eq, a, b))
+    return cv2.cvtColor(lab_eq, cv2.COLOR_LAB2BGR)
 
 
 # ----------------- Pré-processamento em par -----------------
-def preprocess_pair(img1, img2, ref_name="ref", target_inner_size=(322, 178), border_ratio=0.12, save_debug=False):
+def preprocess_pair(img1, img2, ref_name="ref", target_inner_size=(322, 178), border_ratio=0.12):
     """
     Pré-processa duas imagens (uploaded x ref) com auto_crop + fallback para crop proporcional.
     """
+    save_debug = False
+
     # tenta crop automático
-    a_crop = auto_crop(img1, debug_name="uploaded")
-    b_crop = auto_crop(img2, debug_name=ref_name)
+    a_crop = auto_crop(img1, save_debug=save_debug, debug_name="uploaded")
+    b_crop = auto_crop(img2, save_debug=save_debug, debug_name=ref_name)
 
     if a_crop is None or b_crop is None:
         # fallback para método baseado em border_ratio
@@ -143,7 +149,13 @@ def compare_images_features(prep_img1, prep_img2):
     normalized_score = 1.0 / (1.0 + avg_distance)
     return float(normalized_score)
 
+# ----------------- Converte img to base64 --------------
+def image_to_base64(img):
+    _, buffer = cv2.imencode(".png", img)
+    return base64.b64encode(buffer).decode("utf-8")
 
+
+# ----------------- Função principal de comparação -----------------
 # ----------------- Função principal de comparação -----------------
 def compare_image(uploaded_img, images_db, threshold=0.5, target_inner_size=(322, 178), border_ratio=0.17, debug=False):
     """
@@ -153,7 +165,10 @@ def compare_image(uploaded_img, images_db, threshold=0.5, target_inner_size=(322
     best_match = None
     best_score = -1.0
 
-    # Normaliza contraste da imagem enviada
+    # 🔥 guarda a versão original (sem crop, sem normalize)
+    uploaded_original_base64 = image_to_base64(uploaded_img)
+
+    # Normaliza contraste da imagem enviada para a comparação
     uploaded_img = normalize_contrast(uploaded_img)
 
     for idx, img_info in enumerate(images_db):
@@ -173,12 +188,11 @@ def compare_image(uploaded_img, images_db, threshold=0.5, target_inner_size=(322
             ref_name=ref_name,
             target_inner_size=target_inner_size,
             border_ratio=border_ratio,
-            save_debug=debug
         )
 
         hist_score = compare_histogram(prep_uploaded, prep_ref)
         feature_score = compare_images_features(prep_uploaded, prep_ref)
-        combined_score = (hist_score + feature_score) / 2.0
+        combined_score = (0.7 * hist_score) + (0.3 * feature_score)
 
         if combined_score > best_score and combined_score > threshold:
             best_score = combined_score
@@ -189,4 +203,7 @@ def compare_image(uploaded_img, images_db, threshold=0.5, target_inner_size=(322
                 pass
             best_match["score"] = combined_score
 
-    return best_match
+            # 🔥 aqui agora vai a imagem original enviada pelo usuário
+            best_match["image_base64"] = uploaded_original_base64
+
+    return best_match 
