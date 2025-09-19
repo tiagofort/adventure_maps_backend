@@ -336,5 +336,297 @@ reference_images = [
   {
     "local": "Seafoam Island",
     "path": BASE_DIR / "assets/map208.png"
+  },
+  {
+    "local": "Charicific Valley",
+    "path": BASE_DIR / "assets/map301.png"
+  },
+  {
+    "local": "Lightstorm Island",
+    "path": BASE_DIR / "assets/map302.png"
+  },
+  {
+    "local": "Charicific Valley",
+    "path": BASE_DIR / "assets/map303.png"
+  },
+  {
+    "local": "Pewter",
+    "path": BASE_DIR / "assets/map304.png"
+  },
+  {
+    "local": "Charicific Valley",
+    "path": BASE_DIR / "assets/map305.png"
+  },
+  {
+    "local": "Pewter",
+    "path": BASE_DIR / "assets/map306.png"
+  },
+  {
+    "local": "Mt. Moon",
+    "path": BASE_DIR / "assets/map307.png"
+  },
+  {
+    "local": "Green Island",
+    "path": BASE_DIR / "assets/map308.png"
+  },
+  {
+    "local": "Cerulean Swamp",
+    "path": BASE_DIR / "assets/map309.png"
+  },
+  {
+    "local": "Cerulean Swamp",
+    "path": BASE_DIR / "assets/map310.png"
+  },
+  {
+    "local": "Wildwind Island",
+    "path": BASE_DIR / "assets/map311.png"
+  },
+  {
+    "local": "Saffron",
+    "path": BASE_DIR / "assets/map312.png"
+  },
+  {
+    "local": "Rock Tunnel",
+    "path": BASE_DIR / "assets/map313.png"
+  },
+  {
+    "local": "Power Plant",
+    "path": BASE_DIR / "assets/map314.png"
+  },
+  {
+    "local": "Power Plant",
+    "path": BASE_DIR / "assets/map315.png"
+  },
+  {
+    "local": "Power Plant (Ilha próxima ao Aerodactyl)",
+    "path": BASE_DIR / "assets/map316.png"
+  },
+  {
+    "local": "Pewter",
+    "path": BASE_DIR / "assets/map317.png"
+  },
+  {
+    "local": "Valencia Island",
+    "path": BASE_DIR / "assets/map318.png"
+  },
+  {
+    "local": "Viridian Forest",
+    "path": BASE_DIR / "assets/map319.png"
+  },
+  {
+    "local": "Leaf Island",
+    "path": BASE_DIR / "assets/map320.png"
+  },
+  {
+    "local": "Jungle Island",
+    "path": BASE_DIR / "assets/map321.png"
+  },
+  {
+    "local": "Jungle Island",
+    "path": BASE_DIR / "assets/map322.png"
+  },
+  {
+    "local": "Jungle Island",
+    "path": BASE_DIR / "assets/map323.png"
+  },
+  {
+    "local": "Leek Island",
+    "path": BASE_DIR / "assets/map324.png"
+  },
+  {
+    "local": "Farfetch᾿d de Fuchsia",
+    "path": BASE_DIR / "assets/map325.png"
+  },
+  {
+    "local": "Pinkan Island",
+    "path": BASE_DIR / "assets/map326.png"
+  },
+  {
+    "local": "Tarroco Island",
+    "path": BASE_DIR / "assets/map327.png"
+  },
+  {
+    "local": "Kabuto Fossil Island",
+    "path": BASE_DIR / "assets/map328.png"
+  },
+  {
+    "local": "Valencia Island",
+    "path": BASE_DIR / "assets/map329.png"
+  },
+  {
+    "local": "Lightning Island",
+    "path": BASE_DIR / "assets/map330.png"
+  },
+  {
+    "local": "Shamouti Island (Smeargle)",
+    "path": BASE_DIR / "assets/map331.png"
+  },
+  {
+    "local": "Shamouti Island",
+    "path": BASE_DIR / "assets/map332.png"
+  },
+  {
+    "local": "Fairchild Island",
+    "path": BASE_DIR / "assets/map333.png"
+  },
+  {
+    "local": "Hamlin Island",
+    "path": BASE_DIR / "assets/map334.png"
+  },
+  {
+    "local": "Mandarin Island (Politoed)",
+    "path": BASE_DIR / "assets/map335.png"
+  },
+  {
+    "local": "Fire Island",
+    "path": BASE_DIR / "assets/map336.png"
+  },
+  {
+    "local": "Butwal Island",
+    "path": BASE_DIR / "assets/map337.png"
+  },
+  {
+    "local": "Vermilion",
+    "path": BASE_DIR / "assets/map338.png"
+  },
+  {
+    "local": "Fuchsia",
+    "path": BASE_DIR / "assets/map339.png"
+  },
+  {
+    "local": "Vermilion",
+    "path": BASE_DIR / "assets/map340.png"
+  },
+  {
+    "local": "Cerulean",
+    "path": BASE_DIR / "assets/map341.png"
+  },
+  {
+    "local": "Leek Island",
+    "path": BASE_DIR / "assets/map342.png"
+  },
+  {
+    "local": "Leek Island",
+    "path": BASE_DIR / "assets/map343.png"
+  },
+  {
+    "local": "Leek Island",
+    "path": BASE_DIR / "assets/map344.png"
+  },
+  {
+    "local": "Saffron",
+    "path": BASE_DIR / "assets/map345.png"
+  },
+  {
+    "local": "Butwal Island",
+    "path": BASE_DIR / "assets/map346.png"
+  },
+  {
+    "local": "Fuchsia",
+    "path": BASE_DIR / "assets/map347.png"
+  },
+  {
+    "local": "Kinnow Island",
+    "path": BASE_DIR / "assets/map348.png"
+  },
+  {
+    "local": "Fuchsia",
+    "path": BASE_DIR / "assets/map349.png"
+  },
+  {
+    "local": "Fuchsia (Ilha abaixo de Tropical Island)",
+    "path": BASE_DIR / "assets/map350.png"
+  },
+  {
+    "local": "Ascorbia Island",
+    "path": BASE_DIR / "assets/map351.png"
+  },
+  {
+    "local": "Kinnow Island",
+    "path": BASE_DIR / "assets/map352.png"
+  },
+  {
+    "local": "Fuchsia (Ilha abaixo de Tropical Island)",
+    "path": BASE_DIR / "assets/map352.png"
+  },
+  {
+    "local": "Seven Grapefruit Islands",
+    "path": BASE_DIR / "assets/map353.png"
+  },
+  {
+    "local": "Seven Grapefruit Islands",
+    "path": BASE_DIR / "assets/map354.png"
+  },
+  {
+    "local": "Lost Island",
+    "path": BASE_DIR / "assets/map355.png"
+  },
+  {
+    "local": "Murcott Island",
+    "path": BASE_DIR / "assets/map356.png"
+  },
+  {
+    "local": "Murcott Island",
+    "path": BASE_DIR / "assets/map357.png"
+  },
+  {
+  "local": "Pewter",
+  "path": BASE_DIR / "assets/map701.png"
+  },
+  {
+    "local": "Cemitério de Lavender",
+    "path": BASE_DIR / "assets/map702.png"
+  },
+  {
+    "local": "Cemitério de Lavender",
+    "path": BASE_DIR / "assets/map703.png"
+  },
+  {
+    "local": "Desert Island",
+    "path": BASE_DIR / "assets/map704.png"
+  },
+  {
+    "local": "Hamlin Island (Abandoned City)",
+    "path": BASE_DIR / "assets/map705.png"
+  },
+  {
+    "local": "Shamouti Island (Dojo)",
+    "path": BASE_DIR / "assets/map706.png"
+  },
+  {
+    "local": "Shamouti Island (Gengar)",
+    "path": BASE_DIR / "assets/map707.png"
+  },
+  {
+    "local": "Sphinx Island",
+    "path": BASE_DIR / "assets/map708.png"
+  },
+  {
+    "local": "Metal Ship",
+    "path": BASE_DIR / "assets/map709.png"
+  },
+  {
+    "local": "Rocket Hideout (Ascorbia)",
+    "path": BASE_DIR / "assets/map710.png"
+  },
+  {
+    "local": "Lost Island",
+    "path": BASE_DIR / "assets/map711.png"
+  },
+  {
+    "local": "Desert Island",
+    "path": BASE_DIR / "assets/map712.png"
+  },
+  {
+    "local": "Desert Island",
+    "path": BASE_DIR / "assets/map713.png"
+  },
+  {
+    "local": "Desert Island",
+    "path": BASE_DIR / "assets/map714.png"
+  },
+  {
+    "local": "Ghost Ship",
+    "path": BASE_DIR / "assets/map715.png"
   }
 ]

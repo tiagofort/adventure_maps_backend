@@ -754,5 +754,443 @@
     "local": "Seafoam Island",
     "coords": "4181, 4171, 5",
     "path": "assets/map208.png"
+  },
+  {
+    "map_number": "301",
+    "local": "Charicific Valley",
+    "coords": "3508, 3208, 6",
+    "path": "assets/map301.png"
+  },
+  {
+    "map_number": "302",
+    "local": "Lightstorm Island",
+    "coords": "4637, 3333, 7",
+    "path": "assets/map302.png"
+  },
+  {
+    "map_number": "303",
+    "local": "Charicific Valley",
+    "coords": "3623, 3301, 7",
+    "path": "assets/map303.png"
+  },
+  {
+    "map_number": "304",
+    "local": "Pewter",
+    "coords": "3645, 3504, 6",
+    "path": "assets/map304.png"
+  },
+  {
+    "map_number": "305",
+    "local": "Charicific Valley",
+    "coords": "3652, 3189, 4",
+    "path": "assets/map305.png"
+  },
+  {
+    "map_number": "306",
+    "local": "Pewter",
+    "coords": "3748, 3564, 7",
+    "path": "assets/map306.png"
+  },
+  {
+    "map_number": "307",
+    "local": "Mt. Moon",
+    "coords": "3768, 3499, 5",
+    "path": "assets/map307.png"
+  },
+  {
+    "map_number": "308",
+    "local": "Green Island",
+    "coords": "3847, 3348, 7",
+    "path": "assets/map308.png"
+  },
+  {
+    "map_number": "309",
+    "local": "Cerulean Swamp",
+    "coords": "3900, 3529, 6",
+    "path": "assets/map309.png"
+  },
+  {
+    "map_number": "310",
+    "local": "Cerulean Swamp",
+    "coords": "3949, 3522, 8",
+    "path": "assets/map310.png"
+  },
+  {
+    "map_number": "311",
+    "local": "Wildwind Island",
+    "coords": "4054, 3277, 6",
+    "path": "assets/map311.png"
+  },
+  {
+    "map_number": "312",
+    "local": "Saffron",
+    "coords": "4159, 3548, 7",
+    "path": "assets/map312.png"
+  },
+  {
+    "map_number": "313",
+    "local": "Rock Tunnel",
+    "coords": "4267, 3457, 7",
+    "path": "assets/map313.png"
+  },
+  {
+    "map_number": "314",
+    "local": "Power Plant",
+    "coords": "4377, 3523, 7",
+    "path": "assets/map314.png"
+  },
+  {
+    "map_number": "315",
+    "local": "Power Plant",
+    "coords": "4398, 3508, 7",
+    "path": "assets/map315.png"
+  },
+  {
+    "map_number": "316",
+    "local": "Power Plant (Ilha próxima ao Aerodactyl)",
+    "coords": "4457, 3453, 7",
+    "path": "assets/map316.png"
+  },
+  {
+    "map_number": "317",
+    "local": "Pewter",
+    "coords": "3611, 3440, 7",
+    "path": "assets/map317.png"
+  },
+  {
+    "map_number": "318",
+    "local": "Valencia Island",
+    "coords": "3332, 6074, 6",
+    "path": "assets/map318.png"
+  },
+  {
+    "map_number": "319",
+    "local": "Viridian Forest",
+    "coords": "3616, 3623, 7",
+    "path": "assets/map319.png"
+  },
+  {
+    "map_number": "320",
+    "local": "Leaf Island",
+    "coords": "3658, 4215, 6",
+    "path": "assets/map320.png"
+  },
+  {
+    "map_number": "321",
+    "local": "Jungle Island",
+    "coords": "3837, 3776, 6",
+    "path": "assets/map321.png"
+  },
+  {
+    "map_number": "322",
+    "local": "Jungle Island",
+    "coords": "3898, 3837, 6",
+    "path": "assets/map322.png"
+  },
+  {
+    "map_number": "323",
+    "local": "Jungle Island",
+    "coords": "3936, 3774, 7",
+    "path": "assets/map323.png"
+  },
+  {
+    "map_number": "324",
+    "local": "Leek Island",
+    "coords": "4152, 6146, 5",
+    "path": "assets/map324.png"
+  },
+  {
+    "map_number": "325",
+    "local": "Farfetch᾿d de Fuchsia",
+    "coords": "4200, 3861, 6",
+    "path": "assets/map325.png"
+  },
+  {
+    "map_number": "326",
+    "local": "Pinkan Island",
+    "coords": "3207, 5019, 4",
+    "path": "assets/map326.png"
+  },
+  {
+    "map_number": "327",
+    "local": "Tarroco Island",
+    "coords": "3361, 4656, 6",
+    "path": "assets/map327.png"
+  },
+  {
+    "map_number": "328",
+    "local": "Kabuto Fossil Island",
+    "coords": "3395, 5768, 6",
+    "path": "assets/map328.png"
+  },
+  {
+    "map_number": "329",
+    "local": "Valencia Island",
+    "coords": "3439, 6114, 7",
+    "path": "assets/map329.png"
+  },
+  {
+    "map_number": "330",
+    "local": "Lightning Island",
+    "coords": "3482, 5451, 6",
+    "path": "assets/map330.png"
+  },
+  {
+    "map_number": "331",
+    "local": "Shamouti Island (Smeargle)",
+    "coords": "3545, 5113, 7",
+    "path": "assets/map331.png"
+  },
+  {
+    "map_number": "332",
+    "local": "Shamouti Island",
+    "coords": "3671, 5074, 6",
+    "path": "assets/map332.png"
+  },
+  {
+    "map_number": "333",
+    "local": "Fairchild Island",
+    "coords": "3724, 5766, 3",
+    "path": "assets/map333.png"
+  },
+  {
+    "map_number": "334",
+    "local": "Hamlin Island",
+    "coords": "3783, 4516, 7",
+    "path": "assets/map334.png"
+  },
+  {
+    "map_number": "335",
+    "local": "Mandarin Island (Politoed)",
+    "coords": "3928, 6055, 6",
+    "path": "assets/map335.png"
+  },
+  {
+    "map_number": "336",
+    "local": "Fire Island",
+    "coords": "3940, 5350, 7",
+    "path": "assets/map336.png"
+  },
+  {
+    "map_number": "337",
+    "local": "Butwal Island",
+    "coords": "4050, 4569, 7",
+    "path": "assets/map337.png"
+  },
+  {
+    "map_number": "338",
+    "local": "Vermilion",
+    "coords": "4161, 3826, 7",
+    "path": "assets/map338.png"
+  },
+  {
+    "map_number": "339",
+    "local": "Fuchsia",
+    "coords": "4219, 3988, 7",
+    "path": "assets/map339.png"
+  },
+  {
+    "map_number": "340",
+    "local": "Vermilion",
+    "coords": "4239, 3800, 7",
+    "path": "assets/map340.png"
+  },
+  {
+    "map_number": "341",
+    "local": "Cerulean",
+    "coords": "4066, 3546, 8",
+    "path": "assets/map341.png"
+  },
+  {
+    "map_number": "342",
+    "local": "Leek Island",
+    "coords": "4067, 6122, 5",
+    "path": "assets/map342.png"
+  },
+  {
+    "map_number": "343",
+    "local": "Leek Island",
+    "coords": "4120, 6105, 5",
+    "path": "assets/map343.png"
+  },
+  {
+    "map_number": "344",
+    "local": "Leek Island",
+    "coords": "4126, 6089, 6",
+    "path": "assets/map344.png"
+  },
+  {
+    "map_number": "345",
+    "local": "Saffron",
+    "coords": "4132, 3556, 8",
+    "path": "assets/map345.png"
+  },
+  {
+    "map_number": "346",
+    "local": "Butwal Island",
+    "coords": "4163, 4552, 6",
+    "path": "assets/map346.png"
+  },
+  {
+    "map_number": "347",
+    "local": "Fuchsia",
+    "coords": "4176, 3904, 7",
+    "path": "assets/map347.png"
+  },
+  {
+    "map_number": "348",
+    "local": "Kinnow Island",
+    "coords": "4201, 5727, 6",
+    "path": "assets/map348.png"
+  },
+  {
+    "map_number": "349",
+    "local": "Fuchsia",
+    "coords": "4262, 3940, 7",
+    "path": "assets/map349.png"
+  },
+  {
+    "map_number": "350",
+    "local": "Fuchsia (Ilha abaixo de Tropical Island)",
+    "coords": "4339, 4000, 7",
+    "path": "assets/map350.png"
+  },
+  {
+    "map_number": "351",
+    "local": "Ascorbia Island",
+    "coords": "4383, 4346, 7",
+    "path": "assets/map351.png"
+  },
+  {
+    "map_number": "352",
+    "local": "Kinnow Island",
+    "coords": "4405, 5855, 7",
+    "path": "assets/map352.png"
+  },
+  {
+    "map_number": "352",
+    "local": "Fuchsia (Ilha abaixo de Tropical Island)",
+    "coords": "4409, 3997, 7",
+    "path": "assets/map352.png"
+  },
+  {
+    "map_number": "353",
+    "local": "Seven Grapefruit Islands",
+    "coords": "4439, 5223, 7",
+    "path": "assets/map353.png"
+  },
+  {
+    "map_number": "354",
+    "local": "Seven Grapefruit Islands",
+    "coords": "4484, 5209, 7",
+    "path": "assets/map354.png"
+  },
+  {
+    "map_number": "355",
+    "local": "Lost Island",
+    "coords": "4616, 3960, 7",
+    "path": "assets/map355.png"
+  },
+  {
+    "map_number": "356",
+    "local": "Murcott Island",
+    "coords": "4637, 6107, 7",
+    "path": "assets/map356.png"
+  },
+  {
+    "map_number": "357",
+    "local": "Murcott Island",
+    "coords": "4716, 6009, 6",
+    "path": "assets/map357.png"
+  },
+  {
+  "map_number": "701",
+  "local": "Pewter",
+  "coords": "3698, 3447, 8",
+  "path": "assets/map701.png"
+  },
+  {
+    "map_number": "702",
+    "local": "Cemitério de Lavender",
+    "coords": "4302, 3662, 8",
+    "path": "assets/map702.png"
+  },
+  {
+    "map_number": "703",
+    "local": "Cemitério de Lavender",
+    "coords": "4356, 3641, 9",
+    "path": "assets/map703.png"
+  },
+  {
+    "map_number": "704",
+    "local": "Desert Island",
+    "coords": "4559, 3656, 9",
+    "path": "assets/map704.png"
+  },
+  {
+    "map_number": "705",
+    "local": "Hamlin Island (Abandoned City)",
+    "coords": "3524, 4536, 7",
+    "path": "assets/map705.png"
+  },
+  {
+    "map_number": "706",
+    "local": "Shamouti Island (Dojo)",
+    "coords": "3608, 4915, 5",
+    "path": "assets/map706.png"
+  },
+  {
+    "map_number": "707",
+    "local": "Shamouti Island (Gengar)",
+    "coords": "3931, 5097, 13",
+    "path": "assets/map707.png"
+  },
+  {
+    "map_number": "708",
+    "local": "Sphinx Island",
+    "coords": "4063, 5464, 7",
+    "path": "assets/map708.png"
+  },
+  {
+    "map_number": "709",
+    "local": "Metal Ship",
+    "coords": "4418, 5714, 6",
+    "path": "assets/map709.png"
+  },
+  {
+    "map_number": "710",
+    "local": "Rocket Hideout (Ascorbia)",
+    "coords": "4432, 4314, 8",
+    "path": "assets/map710.png"
+  },
+  {
+    "map_number": "711",
+    "local": "Lost Island",
+    "coords": "4581, 3955, 8",
+    "path": "assets/map711.png"
+  },
+  {
+    "map_number": "712",
+    "local": "Desert Island",
+    "coords": "4611, 3703, 9",
+    "path": "assets/map712.png"
+  },
+  {
+    "map_number": "713",
+    "local": "Desert Island",
+    "coords": "4612, 3694, 10",
+    "path": "assets/map713.png"
+  },
+  {
+    "map_number": "714",
+    "local": "Desert Island",
+    "coords": "4649, 3670, 8",
+    "path": "assets/map714.png"
+  },
+  {
+    "map_number": "715",
+    "local": "Ghost Ship",
+    "coords": "4673, 5599, 7",
+    "path": "assets/map715.png"
   }
 ]
