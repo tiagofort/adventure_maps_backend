@@ -32,6 +32,7 @@ reference_images = [
   {"local": "Golden Island", "path": BASE_DIR / "assets/map126.png"},
   {"local": "Kinnow Island", "path": BASE_DIR / "assets/map127.png"}, 
   {"local": "Kinnow Island", "path": BASE_DIR / "assets/map128.png"},
+  {"local": "Kinnow Island", "path": BASE_DIR / "assets/map128_s.png"}, 
   {"local": "Saffron", "path": BASE_DIR / "assets/map407.png"},
   {"local": "Fairchild Island", "path": BASE_DIR / "assets/map415.png"},
   {"local": "Seafoam Island", "path": BASE_DIR / "assets/map419.png"},

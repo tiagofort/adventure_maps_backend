@@ -2,23 +2,20 @@ from pathlib import Path
 import base64
 import cv2
 import numpy as np
+from skimage.feature import local_binary_pattern
+from skimage.color import rgb2gray
 
 BASE_DIR = Path(__file__).resolve().parent
 
 # ----------------- Utils de pré-processamento -----------------
 def crop_and_resize_to_target(img, target_inner_size=(322, 178), border_ratio=0.12):
-    """
-    Remove bordas proporcionais e redimensiona o interior mantendo proporção.
-    Retorna (resized, crop_original).
-    """
     h, w = img.shape[:2]
     top = int(h * border_ratio)
     bottom = int(h * (1 - border_ratio))
     left = int(w * border_ratio)
     right = int(w * (1 - border_ratio))
-    inner = img[top:bottom, left:right]  # <- crop sem resize
+    inner = img[top:bottom, left:right]
 
-    # Redimensiona mantendo proporção
     inner_h, inner_w = inner.shape[:2]
     target_w, target_h = target_inner_size
     scale_w = target_w / inner_w
@@ -28,7 +25,6 @@ def crop_and_resize_to_target(img, target_inner_size=(322, 178), border_ratio=0.
     new_h = int(inner_h * scale)
     resized = cv2.resize(inner, (new_w, new_h), interpolation=cv2.INTER_AREA)
 
-    # Pad central para ter exatamente target_inner_size
     canvas = np.zeros((target_h, target_w, 3), dtype=np.uint8)
     y_off = (target_h - new_h) // 2
     x_off = (target_w - new_w) // 2
@@ -36,8 +32,6 @@ def crop_and_resize_to_target(img, target_inner_size=(322, 178), border_ratio=0.
 
     return canvas, inner
 
-
-# ----------------- Normalização de contraste -----------------
 def normalize_contrast(img):
     lab = cv2.cvtColor(img, cv2.COLOR_BGR2LAB)
     l, a, b = cv2.split(lab)
@@ -46,33 +40,7 @@ def normalize_contrast(img):
     lab_eq = cv2.merge((l_eq, a, b))
     return cv2.cvtColor(lab_eq, cv2.COLOR_LAB2BGR)
 
-
-# ----------------- Redimensionamento condicional (nova lógica) -----------------
-def resize_based_on_user(uploaded_img, ref_img, target_inner_size=(322, 178), border_ratio=0.12):
-    """
-    Lógica baseada no tamanho do usuário:
-    - Se a imagem do usuário for pequena (aprox 443x338) -> redimensiona apenas a base
-    - Se a imagem do usuário for grande (aprox 894x701) -> redimensiona ambas
-    """
-    h_u, w_u = uploaded_img.shape[:2]
-
-    # Definir ranges aproximados
-    min_w, min_h = 440, 335  # imagens pequenas
-    max_w, max_h = 900, 720  # imagens grandes
-
-    if min_w <= w_u <= max_w and min_h <= h_u <= max_h:
-        # Imagem do usuário grande -> redimensionar ambas
-        prep_uploaded, _ = crop_and_resize_to_target(uploaded_img, target_inner_size, border_ratio)
-        prep_ref, _ = crop_and_resize_to_target(ref_img, target_inner_size, border_ratio)
-    else:
-        # Imagem do usuário pequena -> redimensionar apenas a base
-        prep_uploaded = uploaded_img
-        prep_ref, _ = crop_and_resize_to_target(ref_img, target_inner_size, border_ratio)
-
-    return prep_uploaded, prep_ref
-
-
-# ----------------- Comparação por histograma -----------------
+# ----------------- Comparadores -----------------
 def compare_histogram(prep_img1, prep_img2):
     hsv1 = cv2.cvtColor(prep_img1, cv2.COLOR_BGR2HSV)
     hsv2 = cv2.cvtColor(prep_img2, cv2.COLOR_BGR2HSV)
@@ -83,8 +51,6 @@ def compare_histogram(prep_img1, prep_img2):
     score = cv2.compareHist(hist1, hist2, cv2.HISTCMP_CORREL)
     return float(score)
 
-
-# ----------------- Comparação por features (ORB) -----------------
 def compare_images_features(prep_img1, prep_img2):
     orb = cv2.ORB_create(nfeatures=1500)
     kp1, des1 = orb.detectAndCompute(prep_img1, None)
@@ -95,28 +61,33 @@ def compare_images_features(prep_img1, prep_img2):
     matches = bf.match(des1, des2)
     if len(matches) == 0:
         return 0.0
-    matches = sorted(matches, key=lambda x: x.distance)
     avg_distance = sum([m.distance for m in matches]) / len(matches)
     normalized_score = 1.0 / (1.0 + avg_distance)
     return float(normalized_score)
 
+def compare_lbp(img1, img2, P=8, R=1):
+    """LBP para textura"""
+    gray1 = rgb2gray(cv2.cvtColor(img1, cv2.COLOR_BGR2RGB))
+    gray2 = rgb2gray(cv2.cvtColor(img2, cv2.COLOR_BGR2RGB))
+    lbp1 = local_binary_pattern(gray1, P, R, method="uniform")
+    lbp2 = local_binary_pattern(gray2, P, R, method="uniform")
 
-# ----------------- Converte img to base64 --------------
-def image_to_base64(img):
-    _, buffer = cv2.imencode(".png", img)
-    return base64.b64encode(buffer).decode("utf-8")
+    hist1, _ = np.histogram(lbp1.ravel(), bins=np.arange(0, P + 3), range=(0, P + 2), density=True)
+    hist2, _ = np.histogram(lbp2.ravel(), bins=np.arange(0, P + 3), range=(0, P + 2), density=True)
 
+    # distância qui-quadrado (quanto menor, mais parecido)
+    eps = 1e-7
+    chi_sq = 0.5 * np.sum(((hist1 - hist2) ** 2) / (hist1 + hist2 + eps))
+    score = 1.0 / (1.0 + chi_sq)  # normaliza para 0..1
+    return float(score)
 
 # ----------------- Função principal de comparação -----------------
 def compare_image(uploaded_img, images_db, threshold=0.5, target_inner_size=(322, 178), border_ratio=0.17, debug=False):
-    """
-    Compara a imagem enviada com todas do banco usando a nova lógica de redimensionamento.
-    """
     best_match = None
     best_score = -1.0
 
-    uploaded_original_base64 = image_to_base64(uploaded_img)
-    uploaded_img = normalize_contrast(uploaded_img)
+    uploaded_copy = uploaded_img.copy()
+    uploaded_copy = normalize_contrast(uploaded_copy)
 
     for img_info in images_db:
         ref_img_path = BASE_DIR / img_info["path"]
@@ -126,26 +97,20 @@ def compare_image(uploaded_img, images_db, threshold=0.5, target_inner_size=(322
 
         ref_img = normalize_contrast(ref_img)
 
-        # Redimensionamento condicional baseado na lógica do usuário
-        prep_uploaded, prep_ref = resize_based_on_user(
-            uploaded_img, ref_img,
-            target_inner_size=target_inner_size,
-            border_ratio=border_ratio,
-        )
+        prep_uploaded, _ = crop_and_resize_to_target(uploaded_copy, target_inner_size, border_ratio)
+        prep_ref, _ = crop_and_resize_to_target(ref_img, target_inner_size, border_ratio)
 
-        # Comparações
+        # Comparações híbridas
         hist_score = compare_histogram(prep_uploaded, prep_ref)
         feature_score = compare_images_features(prep_uploaded, prep_ref)
-        combined_score = (0.7 * hist_score) + (0.3 * feature_score)
+        lbp_score = compare_lbp(prep_uploaded, prep_ref)
+
+        # Combinação (ajuste pesos conforme desempenho)
+        combined_score = (0.5 * hist_score) + (0.3 * feature_score) + (0.2 * lbp_score)
 
         if combined_score > best_score and combined_score > threshold:
             best_score = combined_score
             best_match = img_info.copy()
-            try:
-                best_match["coords"] = [int(c) for c in best_match["coords"].split(",")]
-            except Exception:
-                pass
             best_match["score"] = combined_score
-            best_match["image_base64"] = uploaded_original_base64
 
     return best_match

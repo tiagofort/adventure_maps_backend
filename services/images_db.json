@@ -294,6 +294,12 @@
     "path": "assets/map128.png"
   },
   {
+    "map_number": "128",
+    "local": "Kinnow Island",
+    "coords": "4255, 5725, 7",
+    "path": "assets/map128_s.png"
+  },
+  {
     "map_number": "327",
     "local": "Tarroco Island",
     "coords": "3361, 4656, 6",
